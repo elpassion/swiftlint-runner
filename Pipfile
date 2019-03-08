@@ -4,6 +4,14 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+cement = "==3.0.2"
+colorlog = "*"
+pytest = "*"
+pytest-cov = "*"
+coverage = "*"
+twine = ">=1.11.0"
+Jinja2 = "*"
+PyYAML = "*"
 
 [packages]
 cement = "==3.0.2"
