@@ -1,0 +1,13 @@
+version: "3"
+services:
+    slrunner:
+        image: "slrunner:dev"
+        build:
+            context: .
+            dockerfile: Dockerfile
+        hostname: slrunner
+        stdin_open: true
+        tty: true
+        working_dir: '/slrunner-dev'
+        volumes:
+            - ".:/slrunner-dev"
