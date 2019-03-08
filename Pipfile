@@ -8,6 +8,7 @@ green = "*"
 
 [packages]
 click = "*"
+mod-pbxproj = "*"
 
 [requires]
 python_version = "3.7"

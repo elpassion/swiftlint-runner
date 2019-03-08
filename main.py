@@ -1,4 +1,4 @@
-from commands.lint import lint
+from commands.utils import lint
 
 if __name__ == '__main__':
     lint()
