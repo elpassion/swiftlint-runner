@@ -15,7 +15,7 @@ from commands.utils.xcproj import list_swift_files
 @click.option('--delete-config/--no-delete-config', default=True)
 def lint(xcodeproj_path, target_name, swiftlint_cfg_path, delete_config):
     with open(swiftlint_cfg_path, 'r') as sources:
-        sources_config = yaml.load(sources)
+        sources_config = yaml.safe_load(sources)
 
         with open('.swiftlint.yml', 'w') as output:
             sources_config['included'] = list_swift_files(xcodeproj_path, target_name)
