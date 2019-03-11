@@ -10,8 +10,8 @@ UI /
 └── Controllers /
     │
     ├── ViewController.swift
-    └── ViewControllerSpec.swift
-    ├── Doubles
+    ├── ViewControllerSpec.swift
+    └── Doubles
         └── APIClientDouble.swift
 ```
 
@@ -26,9 +26,9 @@ Given the directory structure:
 ```
 Project /
 │
-└── .swiftlint_sources.yml
-└── .swiftlint_specs.yml
-└── Project.xcodeproj
+├── .swiftlint_sources.yml
+├── .swiftlint_specs.yml
+├── Project.xcodeproj
 └── Controllers /
     ├── ViewController.swift
     └── ViewControllerSpec.swift
