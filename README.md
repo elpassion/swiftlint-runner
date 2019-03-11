@@ -1,6 +1,6 @@
 # Missing SwiftLint runner
 
-Missing **SwiftLint runner** which is Xcode target aware.
+Missing Xcode project aware **SwiftLint runner** with support for different targets.
 
 ## Motivation
 
