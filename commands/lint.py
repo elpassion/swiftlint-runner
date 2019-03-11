@@ -1,6 +1,9 @@
-import click
 import os
+from subprocess import run
+
+import click
 import yaml
+from click.exceptions import Exit
 
 from commands.utils.xcproj import list_swift_files
 
@@ -18,10 +21,13 @@ def lint(xcodeproj_path, target_name, swiftlint_cfg_path, delete_config):
             sources_config['included'] = list_swift_files(xcodeproj_path, target_name)
             yaml.dump(sources_config, output, default_flow_style=False, allow_unicode=True)
 
+        process = run(["swiftlint"])
+
         if delete_config:
             try:
                 os.remove('.swiftlint.yml')
             except OSError:
                 click.echo('Cleanup failed, could not remove .swiftlint.yml file', err=True)
 
-    click.echo('Hello World!')
+        if process.returncode != 0:
+            raise Exit(process.returncode)
