@@ -1,6 +1,6 @@
 # Missing SwiftLint runner
 
-Missing Xcode project aware **SwiftLint runner** with support for different targets.
+Missing `.xcproj` aware **SwiftLint runner** with support for different targets.
 
 ## Motivation
 
