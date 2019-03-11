@@ -6,7 +6,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name='swiftlint-runner',
-    version='0.1',
+    version='0.0.1',
     long_description=README,
     long_description_content_type='text/markdown',
     packages=['commands', 'commands.utils'],
