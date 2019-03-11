@@ -1,5 +1,7 @@
 # Missing SwiftLint runner
 
+Missing **SwiftLint runner** which is Xcode target aware.
+
 ## Motivation
 
 The original SwiftLint tool is Xcode project agnostic. This can be problematic. Imagine you want to use different SwiftLint config for production and test targets and you have a directory structure where tests (specs) are mixed up with production code:
