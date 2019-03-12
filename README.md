@@ -40,7 +40,7 @@ cd Tests
 swiftlint
 ```
 
-However, keeping the two structures in sync becomes cumbersome in larger projects. That's why you might opt-in to use the same structure for both the production and the test targets:
+However, keeping the two structures in sync quickly becomes cumbersome in the larger projects. That's why you might opt-in to use the same structure for both the production and the test targets:
 
 ```
 Project /
