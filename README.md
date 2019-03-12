@@ -103,3 +103,7 @@ And forget about glob patterns exclusion/inclusion forever!
 ```
 pip install swiftlint-runner
 ```
+
+## License
+
+**SwiftLint runner** is released under an MIT license. See [LICENSE.md](LICENSE.md) for more information.
