@@ -26,7 +26,7 @@ Project /
             └── LoginViewControllerSpec.swift
 ```
 
-You can use a different build phase for production target:
+You can use a different build phase for the production target:
 
 ```
 if which swiftlint >/dev/null; then
