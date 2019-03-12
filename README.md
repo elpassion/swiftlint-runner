@@ -29,23 +29,15 @@ Project /
 You can use a different build phase for the production target:
 
 ```
-if which swiftlint >/dev/null; then
-    cd Sources
-    swiftlint
-else
-    echo "warning: SwiftLint not installed, run 'brew bundle' command"
-fi
+cd Sources
+swiftlint
 ```
 
 And for the test target:
 
 ```
-if which swiftlint >/dev/null; then
-    cd Tests
-    swiftlint
-else
-    echo "warning: SwiftLint not installed, run 'brew bundle' command"
-fi
+cd Tests
+swiftlint
 ```
 
 However, keeping the two structures in sync becomes cumbersome in larger projects. That's why you might opt-in to use the same structure for both the production and the test targets:
